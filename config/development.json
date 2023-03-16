@@ -1,0 +1,16 @@
+{
+  "port": 3030,
+  "dbUri": "mongodb://localhost:27017/dictionary",
+  "secret": "VerifySecretKey6609",
+  "expire": "10h",
+  "access_key": "BuAccessUchunMahfiyKalit",
+  "refresh_key": "BuAccessUchunMahfiyKalit",
+  "access_time": "10h",
+  "refresh_time": "30d",
+  "refresh_ms": 2592000000,
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "rakhimovsh3235@gmail.com",
+  "smtp_password": "pujyxvmgoqlpkfdw",
+  "api_url": "http://localhost:3030"
+}

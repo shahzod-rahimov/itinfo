@@ -1,0 +1,24 @@
+<h3 style="text-align: center;">Mualliflar</h3>
+<div class="row">
+  {{#if data}}
+    {{#each data}}
+      <div class="col-3 mb-5">
+        <div class="card" style="width: 13rem;">
+          <img
+            src="profile-img.png"
+            class="card-img-top"
+            alt="Author's image"
+          />
+          <div class="card-body">
+            <a href="/author/{{id}}">
+              <h5 class="card-title">{{fullname}}</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  {{else}}
+    <h1>Mualiflar topilmadi</h1>
+  {{/if}}
+
+</div>

@@ -1,0 +1,26 @@
+<div class="card mt-3 mx-auto mb-5" style="width: 50rem;">
+  {{#if data.is_checked}}
+    <img id="hat" src="/checked.png" alt="hat" />
+  {{/if}}
+  <img src="{{data.img}}" class="card-img-top" height="400px" />
+  <div class="card-body">
+    <a href="/author/{{data.author_id}}" style="text-decoration: none;">
+      <p class="card-text mb-2">
+        <small class="text-muted">Author: {{data.author}}</small></p>
+    </a>
+    <h5 class="card-title">{{data.title}}</h5>
+    <p class="card-text">{{data.text}}</p>
+    <p class="card-text"><small class="text-muted">Created at:
+        {{data.date}}</small></p>
+    {{#if data.expert}}
+      <a href="/author/{{data.expert_id}}" style="text-decoration: none;">
+        <p class="card-text"><small class="text-muted">Checked by:
+            {{data.expert}}</small></p></a>
+    {{/if}}
+  </div>
+</div>
+<a
+  href="/topics"
+  class="btn btn-primary float-end"
+  style="margin: -35px 155px 20px 0;"
+>Back</a>

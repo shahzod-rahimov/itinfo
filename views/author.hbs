@@ -1,0 +1,37 @@
+<div class="card mt-5 mx-auto" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img
+        src="{{data.img}}"
+        class="img-fluid rounded-start"
+        alt="{{data.nick_name}}"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{data.fullname}}</h5>
+        <p class="card-text">{{data.info}}</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Nickname:</b>
+            {{data.nick_name}}</li>
+          <li class="list-group-item"><b>Position:</b>
+            {{data.position}}</li>
+          <li class="list-group-item"><b>Email address:</b>
+            {{data.email}}</li>
+          <li class="list-group-item"><b>Phone number:</b>
+            {{data.phone}}</li>
+
+          <li class="list-group-item"><b>Is expert:</b>
+            {{#if data.is_expert}}
+              Yes
+            {{else}}
+              No
+            {{/if}}
+          </li>
+
+        </ul>
+        <a href="/authors" class="btn btn-primary float-end mb-3">Back</a>
+      </div>
+    </div>
+  </div>
+</div>

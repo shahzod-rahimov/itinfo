@@ -1,0 +1,17 @@
+<h3 style="text-align: center;">Maqolalar</h3>
+<div class="row mt-5">
+  {{#each data}}
+    <div class="col-4">
+      <div class="card mb-5" style="width: 18rem;">
+        <img src="{{img}}" class="card-img-top" height="155px" />
+        <div class="card-body">
+          <h5 class="card-title">{{title}}</h5>
+          <a
+            href="/topics/{{id}}"
+            class="btn btn-outline-primary mt-2 float-end"
+          >Read</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

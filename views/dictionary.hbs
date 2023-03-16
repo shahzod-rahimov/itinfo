@@ -1,0 +1,11 @@
+<h3 style="text-align: center;">Lug'at</h3>
+
+{{#if data}}
+  {{#each data}}
+    <a href="/dict/{{id}}">
+      <span style="margin-left: 10px;">{{term}}</span>
+    </a>
+  {{/each}}
+{{else}}
+  <h1>Lug'atlar topilmadi</h1>
+{{/if}}
